@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>v1</title>
+    <meta charset="UTF-8">
+	<!-- LIBRERIAS -->
+	<script src="lib/cordova.js"></script>
+    <!-- COMPONENTES -->
+	<script src="com/contacto.js"></script>
+	<script src="com/index.js"></script>
+	<!-- ESTILOS-->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/tabla.css">
+   
+ 
+</head>
+<body onload="addInput('formularioContacto');">
+   
+   <form id='formularioContacto'> 
+   
+  <input type="button" onclick="createTable('tabla');" value="Generar Tabla">   
+  <table id="tabla" bgcolor="#ffffcc" border="1">
+   	 <tr class="head">
+   	 	<td>NOMBRE</td>
+   	    <td>APELLIDO</td>
+   	    <td>TELEFONO</td>
+   	 
+   	 </tr>
+   </table>
+
+</body>
+</html>
